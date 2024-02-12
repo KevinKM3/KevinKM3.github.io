@@ -351,8 +351,8 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">Copyright &copy; Kevin Matthews 2023</div>
+  <footer id="footer" class="bg-black small text-center text-white-50">
+    <div class="container">Copyright &copy; Kevin Matthews <span id="currentYear"></span></div>
   </footer>
 
 
@@ -364,6 +364,12 @@
 
 
   <script src="js/grayscale.min.js"></script>
+
+  <script>
+    // JavaScript code to update the year dynamically
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+  </script>
+
 </body>
 
 </html>
